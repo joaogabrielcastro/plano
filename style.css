@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    font-family: ARIAL;
+}
+/*header*/
+
+.background{
+    background-color: rgb(221, 194, 42);
+    padding: 1rem;
+    position: sticky;
+   
+}
+.background-inner-content{
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.background>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    color: rgb(16, 16, 184);
+}
+.logo span{
+    color: white;
+}
+.background ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.background ul li {
+    color: white;
+    margin-right:  2.5rem;
+    cursor: pointer;
+
+}
+.background ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+.background-inner-content a:hover{
+    color: white;
+
+}
+.header-bottom-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 2rem;
+}
+.header-bottom-side-left{
+    height: 100%;
+    flex-basis: 50%;
+}
+.header-bottom-side-left h2{
+    font-size: 2,5rem;
+    margin-bottom: 1,5rem;
+}
+.header-bottom-side-left h1{
+    font-size: 3rem;
+    margin-bottom: 3,5rem;
+}
+.header-bottom-side-left button{
+    background-color: rgb(28, 123, 211);
+    border: NONE;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.header-bottom-side-right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header-bottom-side-right img{
+    width: 65%;
+}
+
+/*media resolucao*/
+@media(max-width: 800px){
+    .logo{
+        font-size: 1,2rem;
+    }
+    .header-bottom-side{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+        nav{
+            position: absolute;
+
+        }
+
+}
+
+/*header*/
+
+.gray-background{
+    background-color:rgb(78, 73, 73) ;
+}
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.cols{
+    display: flex;
+    padding: 4rem 1rem;
+    justify-content: space-evenly;
+
+}
+.cols-3{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+}
+.cards{
+    width: 325px;
+    height: 325px;
+    animation: slidein infinite;
+    animation-duration: 1s;
+    animation-direction: normal;
+}
+
+
+
